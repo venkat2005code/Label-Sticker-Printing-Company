@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" role="img" aria-label="Illustration representing a materials guide: a fanned row of label material swatches">
+  <rect width="400" height="280" fill="#eef1ee"/>
+  <rect x="70" y="70" width="70" height="140" rx="10" fill="#f4ede0"/>
+  <rect x="130" y="80" width="70" height="140" rx="10" fill="#1f2026"/>
+  <rect x="190" y="70" width="70" height="140" rx="10" fill="#e7f6fd"/>
+  <rect x="250" y="80" width="70" height="140" rx="10" fill="#ec0868"/>
+</svg>

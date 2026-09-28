@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Stack of matte paper product labels with a kraft-paper texture">
+  <rect width="320" height="320" fill="#f6f5f2"/>
+  <rect x="70" y="150" width="180" height="60" rx="8" fill="#d9c9a8"/>
+  <rect x="80" y="130" width="180" height="60" rx="8" fill="#e7d9bb"/>
+  <rect x="90" y="110" width="180" height="60" rx="8" fill="#fff8ec"/>
+  <rect x="90" y="110" width="180" height="60" rx="8" fill="none" stroke="#e6e4df" stroke-width="2"/>
+  <circle cx="120" cy="140" r="14" fill="#ff4b3e"/>
+  <rect x="146" y="128" width="90" height="8" rx="4" fill="#14151a"/>
+  <rect x="146" y="144" width="64" height="6" rx="3" fill="#b7b5ae"/>
+  <rect x="146" y="156" width="76" height="6" rx="3" fill="#b7b5ae"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" role="img" aria-label="Illustration representing a die-cut sticker guide: scissors cutting around a custom shape">
+  <rect width="400" height="280" fill="#e2f7fd"/>
+  <path d="M180 60l30 60-40 60-60-10-10-70z" fill="#00aeef"/>
+  <path d="M180 60l30 60-40 60-60-10-10-70z" fill="none" stroke="#ffffff" stroke-width="3" stroke-dasharray="5 5"/>
+  <path d="M270 90l40 30-10 20-50-10z" fill="#14151a"/>
+  <circle cx="278" cy="94" r="6" fill="#ffffff"/>
+  <circle cx="300" cy="112" r="6" fill="#ffffff"/>
+</svg>

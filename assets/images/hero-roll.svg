@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380" role="img" aria-label="Roll of custom printed labels unwinding">
+  <rect width="300" height="380" fill="#f6f5f2"/>
+  <ellipse cx="150" cy="70" rx="86" ry="34" fill="#e6e4df"/>
+  <rect x="64" y="70" width="172" height="120" fill="#ffffff"/>
+  <ellipse cx="150" cy="190" rx="86" ry="34" fill="#fff" stroke="#e6e4df" stroke-width="2"/>
+  <ellipse cx="150" cy="70" rx="86" ry="34" fill="none" stroke="#d3d1ca" stroke-width="2"/>
+  <ellipse cx="150" cy="70" rx="34" ry="14" fill="#d3d1ca"/>
+  <ellipse cx="150" cy="70" rx="16" ry="7" fill="#b7b5ae"/>
+  <g>
+    <rect x="80" y="92" width="60" height="60" rx="8" fill="#ff4b3e"/>
+    <rect x="150" y="92" width="60" height="60" rx="8" fill="#14151a"/>
+    <rect x="80" y="156" width="60" height="26" rx="6" fill="#00aeef"/>
+    <rect x="150" y="156" width="60" height="26" rx="6" fill="#ffc93c"/>
+  </g>
+  <path d="M150 224c-60 20-96 60-96 96 0 34 20 44 96 44s96-10 96-44c0-36-36-76-96-96z" fill="#ffffff" stroke="#e6e4df" stroke-width="2"/>
+  <rect x="96" y="250" width="108" height="70" rx="10" fill="#ec0868" opacity="0.12"/>
+  <path d="M100 280l24 22 62-46" fill="none" stroke="#ff4b3e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

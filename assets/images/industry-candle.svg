@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 400" role="img" aria-label="Candle jar with a custom kraft-paper label, styled for a handmade candle brand">
+  <rect width="320" height="400" fill="#faf9f6"/>
+  <path d="M148 90c6 14 10 22 10 30a10 10 0 0 1-20 0c0-8 4-16 10-30z" fill="#ffc93c"/>
+  <rect x="152" y="118" width="4" height="14" fill="#3a3a43"/>
+  <path d="M100 132h100c8 0 12 6 12 14v170c0 12-8 20-20 20H108c-12 0-20-8-20-20V146c0-8 4-14 12-14z" fill="#ffffff" stroke="#e6e4df" stroke-width="2"/>
+  <rect x="88" y="190" width="136" height="110" rx="8" fill="#e7d9bb"/>
+  <circle cx="120" cy="220" r="16" fill="#ff4b3e"/>
+  <rect x="146" y="210" width="60" height="8" rx="4" fill="#3a3a43"/>
+  <rect x="146" y="226" width="44" height="6" rx="3" fill="#8a7a5c"/>
+  <rect x="146" y="238" width="52" height="6" rx="3" fill="#8a7a5c"/>
+  <rect x="100" y="264" width="124" height="1.5" fill="#c2ac82"/>
+  <text x="120" y="284" font-family="Arial, sans-serif" font-size="8" fill="#6b5a3d" letter-spacing="1">HAND-POURED SOY WAX</text>
+</svg>

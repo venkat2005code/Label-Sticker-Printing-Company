@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Assortment of custom die-cut shaped stickers">
+  <rect width="320" height="320" fill="#f6f5f2"/>
+  <path d="M120 70l16 30h-32z" fill="#ffc93c"/>
+  <circle cx="200" cy="90" r="34" fill="#ff4b3e"/>
+  <path d="M90 150l50 0 15 46-40 28-40-28z" fill="#00aeef"/>
+  <rect x="185" y="150" width="70" height="70" rx="16" fill="#14151a"/>
+  <path d="M150 235c0-16 14-28 32-28s32 12 32 28-14 24-32 24-32-8-32-24z" fill="#ec0868"/>
+  <path d="M70 220a24 24 0 1 1 48 0 24 24 0 0 1-48 0z" fill="#ffc93c"/>
+</svg>

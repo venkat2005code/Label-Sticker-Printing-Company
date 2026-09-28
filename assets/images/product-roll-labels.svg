@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Industrial roll of labels loaded on a dispenser for high-volume printing">
+  <rect width="320" height="320" fill="#f6f5f2"/>
+  <rect x="40" y="150" width="240" height="10" fill="#8a8a93"/>
+  <ellipse cx="110" cy="140" rx="58" ry="58" fill="#ffffff" stroke="#d3d1ca" stroke-width="3"/>
+  <ellipse cx="110" cy="140" rx="22" ry="22" fill="#d3d1ca"/>
+  <ellipse cx="110" cy="140" rx="9" ry="9" fill="#8a8a93"/>
+  <path d="M168 140c40 0 62 8 62 28v10c0 12-10 20-24 20H206v18c0 8-6 14-14 14H150" fill="none" stroke="#8a8a93" stroke-width="4"/>
+  <rect x="150" y="196" width="60" height="40" rx="6" fill="#ffffff" stroke="#e6e4df" stroke-width="2"/>
+  <rect x="150" y="196" width="60" height="14" fill="#ffc93c"/>
+  <rect x="220" y="196" width="60" height="40" rx="6" fill="#ffffff" stroke="#e6e4df" stroke-width="2"/>
+  <rect x="220" y="196" width="60" height="14" fill="#00aeef"/>
+</svg>

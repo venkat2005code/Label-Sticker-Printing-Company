@@ -1,0 +1,63 @@
+/* ==========================================================================
+   RTL SUPPORT
+   Loaded only when <html dir="rtl">. Most components already use logical
+   properties (margin-inline, inset-inline, text-align: start/end) in
+   style.css, so this file only patches the handful of rules that needed a
+   physical value (transforms, background positions, shadows, animation
+   direction) which logical properties can't express.
+   ========================================================================== */
+
+[dir="rtl"] { text-align: right; }
+
+/* Icons that imply a reading direction should flip */
+[dir="rtl"] .breadcrumb .sep,
+[dir="rtl"] .icon-flip,
+[dir="rtl"] .pagination .icon-prev,
+[dir="rtl"] .pagination .icon-next,
+[dir="rtl"] .panel-nav .icon-prev,
+[dir="rtl"] .panel-nav .icon-next,
+[dir="rtl"] .share-row svg.arrow {
+  transform: scaleX(-1);
+}
+
+/* Collage / decorative rotation mirrors so it still reads naturally */
+[dir="rtl"] .collage-badge { transform: rotate(10deg); }
+
+/* Nav dropdown should open from the visual right (inline-start already
+   points the right way via `left:0`→ becomes visually-right under RTL,
+   this just corrects the caret animation direction) */
+[dir="rtl"] .nav-dropdown { left: auto; right: 0; }
+
+/* Sidebar drawer slide direction handled in style.css via [dir="rtl"]
+   selectors already; this keeps the off-canvas start position consistent
+   with logical translateX usage above */
+
+/* Table numerals stay LTR for legibility (prices, quantities, dates) even
+   inside an RTL document */
+.data-table td.num,
+.kpi-value,
+.result-price,
+.c-num,
+.price {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Form icon (search, select caret) mirrors handled per-component in
+   style.css; add spacing correction for icon-prefixed inputs */
+[dir="rtl"] .dash-search svg { right: var(--space-3); left: auto; }
+[dir="rtl"] .dash-search input { padding-inline-start: var(--space-4); padding-inline-end: var(--space-10); }
+
+/* Tooltip stays centered — no change needed, kept here as a documented
+   no-op so future contributors know it was checked */
+[dir="rtl"] [data-tooltip]::after { left: 50%; right: auto; transform: translateX(-50%); }
+
+/* Checkbox/radio accent + tile inputs already use inset:0 (logical-safe) */
+
+/* Stepper connector direction is visual, not logical - flip its order */
+[dir="rtl"] .stepper { flex-direction: row-reverse; }
+[dir="rtl"] .stepper .step { flex-direction: row-reverse; }
+
+/* Phone numbers and email addresses stay left-to-right inside RTL layouts */
+[dir="rtl"] a[href^="tel:"],
+[dir="rtl"] a[href^="mailto:"] { direction: ltr; unicode-bidi: isolate; }

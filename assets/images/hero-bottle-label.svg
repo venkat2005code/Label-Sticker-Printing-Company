@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 380" role="img" aria-label="Amber bottle wrapped with a custom printed waterproof label">
+  <rect width="260" height="380" fill="#f6f5f2"/>
+  <rect x="108" y="30" width="44" height="34" rx="6" fill="#a86b2f"/>
+  <path d="M96 64h68l14 40H82z" fill="#c98a3e"/>
+  <path d="M78 104c0-10 6-16 16-16h72c10 0 16 6 16 16v220c0 14-10 24-24 24H102c-14 0-24-10-24-24z" fill="#b5732f"/>
+  <path d="M78 104c0-10 6-16 16-16h72c10 0 16 6 16 16v10H78z" fill="#c98a3e"/>
+  <rect x="60" y="176" width="140" height="120" rx="10" fill="#ffffff"/>
+  <rect x="60" y="176" width="140" height="30" fill="#ff4b3e"/>
+  <text x="130" y="197" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="1">WATERPROOF</text>
+  <circle cx="130" cy="246" r="26" fill="#00aeef" opacity="0.15"/>
+  <path d="M130 226c10 12 16 20 16 28a16 16 0 0 1-32 0c0-8 6-16 16-28z" fill="#00aeef"/>
+  <rect x="76" y="280" width="108" height="8" rx="4" fill="#e6e4df"/>
+  <rect x="76" y="280" width="70" height="8" rx="4" fill="#ffc93c"/>
+  <circle cx="196" cy="150" r="5" fill="#00aeef" opacity="0.6"/>
+  <circle cx="208" cy="170" r="3.5" fill="#00aeef" opacity="0.5"/>
+</svg>

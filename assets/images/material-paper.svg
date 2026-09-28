@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Close-up swatch of uncoated paper label material with a soft fibrous texture">
+  <rect width="400" height="300" fill="#f4ede0"/>
+  <g opacity="0.35" stroke="#d9c9a8" stroke-width="1">
+    <path d="M0 40h400M0 90h400M0 140h400M0 190h400M0 240h400"/>
+  </g>
+  <circle cx="90" cy="80" r="2" fill="#c2ac82"/>
+  <circle cx="210" cy="150" r="2.4" fill="#c2ac82"/>
+  <circle cx="320" cy="60" r="1.8" fill="#c2ac82"/>
+  <circle cx="150" cy="230" r="2" fill="#c2ac82"/>
+  <circle cx="280" cy="200" r="2.4" fill="#c2ac82"/>
+  <rect x="30" y="120" width="120" height="80" rx="6" fill="#ffffff" opacity="0.6"/>
+</svg>

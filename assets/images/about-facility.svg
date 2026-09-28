@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img" aria-label="Illustration of the Printora Labels production floor with press machines and label rolls">
+  <rect width="600" height="420" fill="#f6f5f2"/>
+  <rect x="0" y="300" width="600" height="120" fill="#e6e4df"/>
+  <rect x="40" y="140" width="180" height="160" rx="10" fill="#14151a"/>
+  <rect x="60" y="160" width="140" height="60" rx="6" fill="#3a3a43"/>
+  <circle cx="90" cy="250" r="20" fill="#ff4b3e"/>
+  <circle cx="150" cy="250" r="20" fill="#00aeef"/>
+  <rect x="260" y="180" width="150" height="120" rx="10" fill="#ffffff" stroke="#d3d1ca" stroke-width="2"/>
+  <ellipse cx="335" cy="200" rx="46" ry="18" fill="#e6e4df"/>
+  <rect x="289" y="200" width="92" height="70" fill="#ffffff" stroke="#e6e4df" stroke-width="2"/>
+  <rect x="440" y="120" width="120" height="180" rx="10" fill="#ec0868"/>
+  <rect x="452" y="150" width="96" height="26" rx="6" fill="#ffffff" opacity="0.9"/>
+  <rect x="452" y="186" width="70" height="16" rx="4" fill="#ffffff" opacity="0.6"/>
+  <rect x="452" y="210" width="96" height="60" rx="6" fill="#ffffff" opacity="0.15"/>
+  <circle cx="500" cy="90" r="18" fill="#ffc93c"/>
+  <rect x="0" y="298" width="600" height="4" fill="#d3d1ca"/>
+</svg>

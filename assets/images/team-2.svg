@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Portrait illustration of David Chen, Head of Production">
+  <rect width="320" height="320" fill="#e2f7fd"/>
+  <circle cx="160" cy="140" r="48" fill="#c98a5a"/>
+  <path d="M70 320c0-60 40-96 90-96s90 36 90 96z" fill="#14151a"/>
+  <path d="M108 108c6-26 96-26 104 6-16-8-30-12-52-12s-38 2-52 6z" fill="#1f1a14"/>
+  <rect x="130" y="180" width="60" height="16" rx="8" fill="#00aeef"/>
+</svg>

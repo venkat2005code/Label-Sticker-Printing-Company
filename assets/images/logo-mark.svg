@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Printora Labels logomark">
+  <!-- Liner: the red backing sheet a label is peeled from -->
+  <rect x="1" y="1" width="46" height="46" rx="12" fill="#ff4b3e"/>
+  <!-- Die-cut label with its lower corner lifting off the liner -->
+  <path d="M12.5 8h23A3.5 3.5 0 0 1 39 11.5V29L29 39H12.5A3.5 3.5 0 0 1 9 35.5v-24A3.5 3.5 0 0 1 12.5 8z" fill="#ffffff"/>
+  <path d="M39 29H32.5A3.5 3.5 0 0 0 29 32.5V39z" fill="#ffc6c0"/>
+  <!-- Ink "P" -->
+  <path d="M16.5 33V15h7a5.5 5.5 0 0 1 0 11H20.5" fill="none" stroke="#14151a" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- CMY registration dots -->
+  <circle cx="33.5" cy="14" r="2" fill="#00aeef"/>
+  <circle cx="33.5" cy="19.5" r="2" fill="#ec0868"/>
+  <circle cx="33.5" cy="25" r="2" fill="#ffc93c"/>
+</svg>

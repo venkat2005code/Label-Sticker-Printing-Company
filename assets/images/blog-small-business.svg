@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" role="img" aria-label="Illustration representing small business printing: a storefront with an open sign and product boxes">
+  <rect width="400" height="280" fill="#e2f7fd"/>
+  <rect x="90" y="120" width="220" height="110" fill="#ffffff" stroke="#d3d1ca" stroke-width="2"/>
+  <path d="M80 120l120-50 120 50z" fill="#ff4b3e"/>
+  <rect x="180" y="160" width="40" height="70" fill="#14151a"/>
+  <rect x="110" y="150" width="40" height="40" fill="#ffc93c"/>
+  <rect x="250" y="150" width="40" height="40" fill="#00aeef"/>
+  <circle cx="200" cy="105" r="10" fill="#ffffff"/>
+</svg>

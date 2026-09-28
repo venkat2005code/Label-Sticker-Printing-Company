@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" role="img" aria-label="Glass jar with a round custom sticker label lid seal">
+  <rect width="260" height="260" fill="#faf9f6"/>
+  <rect x="55" y="70" width="150" height="150" rx="18" fill="#ffffff" stroke="#e6e4df" stroke-width="2"/>
+  <rect x="70" y="40" width="120" height="34" rx="8" fill="#14151a"/>
+  <rect x="55" y="70" width="150" height="28" fill="#14151a" opacity="0.06"/>
+  <circle cx="130" cy="145" r="58" fill="#fffaf0"/>
+  <circle cx="130" cy="145" r="58" fill="none" stroke="#ffc93c" stroke-width="4" stroke-dasharray="3 6"/>
+  <circle cx="130" cy="145" r="40" fill="#ec0868"/>
+  <text x="130" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">HANDMADE</text>
+  <text x="130" y="156" font-family="Arial, sans-serif" font-size="9" fill="#ffe4ee" text-anchor="middle" letter-spacing="1">SINCE 2019</text>
+</svg>

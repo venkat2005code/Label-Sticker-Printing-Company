@@ -1,0 +1,106 @@
+/* ==========================================================================
+   DARK MODE
+   Applied when <html data-theme="dark"> is set (manual toggle) or, absent an
+   explicit choice, automatically via prefers-color-scheme.
+   Redefines the semantic tokens declared in style.css — every component
+   consumes those tokens, so no component rules are duplicated here.
+   ========================================================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+  html { transition: background-color var(--duration-base) var(--ease-standard); }
+}
+
+/* System preference (no explicit choice made yet) */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-bg: #0f0f12;
+    --color-bg-alt: #17171b;
+    --color-surface: #1a1a1f;
+    --color-surface-alt: #202026;
+    --color-text: #f4f4f2;
+    --color-text-muted: #9c9ca3;
+    --color-border: #2a2a31;
+    --color-border-strong: #3a3a43;
+
+    --color-primary-light: #3a1712;
+    --color-success-bg: #103322;
+    --color-warning-bg: #332608;
+    --color-error-bg: #351512;
+    --color-info-bg: #0c2436;
+  }
+  html:not([data-theme="light"]) .badge-primary { color: #ff9a8f; }
+  html:not([data-theme="light"]) .badge-cyan { background: #062733; color: #6fd9f5; }
+  html:not([data-theme="light"]) .badge-magenta { background: #33081d; color: #f97cb6; }
+  html:not([data-theme="light"]) .badge-yellow { background: #332608; color: #ffdb85; }
+  html:not([data-theme="light"]) .site-header,
+  html:not([data-theme="light"]) .dash-topbar { background: color-mix(in srgb, var(--color-bg) 85%, transparent); }
+  html:not([data-theme="light"]) .btn-white { background: var(--color-surface-alt); color: var(--color-text); }
+  html:not([data-theme="light"]) .btn-white:hover { background: var(--color-border); }
+  html:not([data-theme="light"]) .btn-dark { background: var(--color-primary); }
+  html:not([data-theme="light"]) .btn-dark:hover { background: var(--color-primary-dark); }
+  html:not([data-theme="light"]) .newsletter-form input,
+  html:not([data-theme="light"]) .dropzone { background: var(--color-surface-alt); }
+  html:not([data-theme="light"]) .card-media,
+  html:not([data-theme="light"]) .material-swatch,
+  html:not([data-theme="light"]) .avatar { background: var(--color-surface-alt); }
+  html:not([data-theme="light"]) .kpi-icon.primary { background: var(--color-primary-light); }
+  html:not([data-theme="light"]) .toast,
+  html:not([data-theme="light"]) .modal,
+  html:not([data-theme="light"]) .nav-dropdown,
+  html:not([data-theme="light"]) .dropdown-menu { box-shadow: 0 24px 48px rgba(0,0,0,0.5), 0 8px 16px rgba(0,0,0,0.35); }
+}
+
+/* Explicit manual selection — always wins */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #0f0f12;
+  --color-bg-alt: #17171b;
+  --color-surface: #1a1a1f;
+  --color-surface-alt: #202026;
+  --color-text: #f4f4f2;
+  --color-text-muted: #9c9ca3;
+  --color-border: #2a2a31;
+  --color-border-strong: #3a3a43;
+
+  --color-primary-light: #3a1712;
+  --color-success-bg: #103322;
+  --color-warning-bg: #332608;
+  --color-error-bg: #351512;
+  --color-info-bg: #0c2436;
+}
+html[data-theme="dark"] .badge-primary { color: #ff9a8f; }
+html[data-theme="dark"] .badge-cyan { background: #062733; color: #6fd9f5; }
+html[data-theme="dark"] .badge-magenta { background: #33081d; color: #f97cb6; }
+html[data-theme="dark"] .badge-yellow { background: #332608; color: #ffdb85; }
+html[data-theme="dark"] .site-header,
+html[data-theme="dark"] .dash-topbar { background: color-mix(in srgb, var(--color-bg) 85%, transparent); }
+html[data-theme="dark"] .btn-white { background: var(--color-surface-alt); color: var(--color-text); }
+html[data-theme="dark"] .btn-white:hover { background: var(--color-border); }
+html[data-theme="dark"] .btn-dark { background: var(--color-primary); }
+html[data-theme="dark"] .btn-dark:hover { background: var(--color-primary-dark); }
+html[data-theme="dark"] .newsletter-form input,
+html[data-theme="dark"] .dropzone { background: var(--color-surface-alt); }
+html[data-theme="dark"] .card-media,
+html[data-theme="dark"] .material-swatch,
+html[data-theme="dark"] .avatar { background: var(--color-surface-alt); }
+html[data-theme="dark"] .kpi-icon.primary { background: var(--color-primary-light); }
+html[data-theme="dark"] .toast,
+html[data-theme="dark"] .modal,
+html[data-theme="dark"] .nav-dropdown,
+html[data-theme="dark"] .dropdown-menu { box-shadow: 0 24px 48px rgba(0,0,0,0.5), 0 8px 16px rgba(0,0,0,0.35); }
+
+/* Explicit light selection always wins over system dark preference */
+html[data-theme="light"] { color-scheme: light; }
+
+/* Revision 2 components */
+[data-theme="dark"] .format-help, [data-theme="dark"] .cta-photo { background: var(--color-surface-alt); }
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .format-help, html:not([data-theme="light"]) .cta-photo { background: var(--color-surface-alt); }
+}
+[data-theme="dark"] .map-embed figcaption a { color: #ff8a80; }
+@media (prefers-color-scheme: dark) { html:not([data-theme="light"]) .map-embed figcaption a { color: #ff8a80; } }
+[data-theme="dark"] .cta-photo .btn-white { box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.35); }
+@media (prefers-color-scheme: dark) { html:not([data-theme="light"]) .cta-photo .btn-white { box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.35); } }
+[data-theme="dark"] .icon-tile.dark { background: var(--color-surface-alt); box-shadow: inset 0 0 0 1px var(--color-border-strong); }
+@media (prefers-color-scheme: dark) { html:not([data-theme="light"]) .icon-tile.dark { background: var(--color-surface-alt); box-shadow: inset 0 0 0 1px var(--color-border-strong); } }

@@ -25,6 +25,7 @@ Team portraits, testimonial avatars, the 404 illustration and the finish swatche
 | `lbl-artwork-swatches.webp` | design plans color swatches | [Burst](https://burst.shopify.com/photos/design-plans-color-swatches) | Burst contributor | Burst free licence |
 | `lbl-auth-designer-desk.webp` | creative designers desk | [Burst](https://burst.shopify.com/photos/creative-designers-desk) | Burst contributor | Burst free licence |
 | `lbl-auth-store-owner.webp` | local store owner stands proud | [Burst](https://burst.shopify.com/photos/local-store-owner-stands-proud) | Burst contributor | Burst free licence |
+| `lbl-barcode-labels.webp` | shipping supplies | [Burst](https://burst.shopify.com/photos/shipping-supplies) | Burst contributor | Burst free licence |
 | `lbl-blog-artwork.webp` | graphic designer at work | [Burst](https://burst.shopify.com/photos/graphic-designer-at-work) | Burst contributor | Burst free licence |
 | `lbl-blog-diecut-fun.webp` | model in yellow room with cactus stickers | [Burst](https://burst.shopify.com/photos/model-in-yellow-room-with-cactus-stickers) | Burst contributor | Burst free licence |
 | `lbl-blog-foil-finish.webp` | gold gift box | [Burst](https://burst.shopify.com/photos/gold-gift-box) | Burst contributor | Burst free licence |
@@ -36,6 +37,7 @@ Team portraits, testimonial avatars, the 404 illustration and the finish swatche
 | `lbl-bottle-shelf-labels.webp` | wine shelves | [Burst](https://burst.shopify.com/photos/wine-shelves) | Burst contributor | Burst free licence |
 | `lbl-bulk-pallet.webp` | stocked pallet in warehouse | [Burst](https://burst.shopify.com/photos/stocked-pallet-in-warehouse) | Burst contributor | Burst free licence |
 | `lbl-candle-label.webp` | cedarwood and moss candle | [Burst](https://burst.shopify.com/photos/cedarwood-and-moss-candle) | Burst contributor | Burst free licence |
+| `lbl-clear-dropper.webp` | glass jar of face oil and a dropper above it | [Burst](https://burst.shopify.com/photos/glass-jar-of-face-oil-and-a-dropper-above-it) | Burst contributor | Burst free licence |
 | `lbl-clear-glass-jar.webp` | mason jar candle | [Burst](https://burst.shopify.com/photos/mason-jar-candle) | Burst contributor | Burst free licence |
 | `lbl-coming-soon-press.webp` | Machine in operation at an industrial event showing label printing pro | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Machine_in_operation_at_an_industrial_event_showing_label_printing_process.jpg) | Shixart1985 | CC BY 2.0 |
 | `lbl-condensation.webp` | frozen water drops | [Burst](https://burst.shopify.com/photos/frozen-water-drops) | Burst contributor | Burst free licence |

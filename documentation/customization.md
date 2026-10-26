@@ -138,3 +138,17 @@ Every third-party integration is placeholder-ready. Search the code for `TODO:` 
 | Google Maps | `pages/contact.html` | Keyless embed by default; set `YOUR_GOOGLE_MAPS_API_KEY` for the Maps Embed API (see *Google Maps*). |
 | Calendar / booking | `pages/contact.html` → `a[data-booking-link]` | Set `data-booking-url` and `href` to your Calendly, Cal.com or Google appointment page. |
 | Payments | Footer payment row and pricing pages (`<!-- TODO: Stripe / PayPal checkout integration point -->`) | Add a Stripe Payment Link or PayPal button. |
+
+## Content to confirm before publishing
+
+The 2026 site review asked the homepage to list these offers, but nothing else in the template (product catalogue,
+services, pricing, the custom-design options or the quote form) supports them. They are worded as enquiries
+("ask a specialist to confirm availability") rather than stated as services, and marked with `CONFIRM BEFORE PUBLISHING`
+comments in `pages/index.html`.
+
+| Item | Where | Action |
+|---|---|---|
+| Barcode Labels | Home 1 → *What We Print* | Confirm you print barcode labels; if so, add a product category and a quote-form option, otherwise remove the card. |
+| UV Coating | Home 1 → *Printing & Finishing* | Confirm the finish; if offered, state it plainly and add it to the finish options. |
+| Foil Finishing | Home 1 → *Printing & Finishing* | Same as above. |
+

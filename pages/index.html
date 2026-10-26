@@ -159,10 +159,8 @@
       <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
       <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
     </ul>
-    <div class="mobile-nav-dir"><span>Text direction</span><button type="button" class="dir-toggle" data-dir-toggle aria-pressed="false" aria-label="Switch to right-to-left layout" title="Switch text direction">LTR</button></div>
     <div class="mobile-nav-cta">
       <a href="contact.html" class="btn btn-primary btn-block">Get a Quote</a>
-      <a href="login.html" class="btn btn-outline btn-block">Log In</a>
     </div>
   </nav>
 
@@ -199,11 +197,34 @@
     </section>
 
     <!-- ==========================================
+         ABOUT US
+    ========================================== -->
+    <section class="section section-alt" aria-labelledby="home-about-title">
+      <div class="container">
+        <div class="grid grid-2 home-about">
+          <div class="card-media home-about__media"><img src="../assets/images/photos/lbl-about-large-format.webp" alt="Large-format digital printer producing full-colour prints" width="1200" height="900" loading="lazy" decoding="async" /></div>
+          <div>
+            <p class="eyebrow">About Us</p>
+            <h2 id="home-about-title">Label Printing Specialists Since 2014.</h2>
+            <p class="mt-4">Printora Labels started in 2014 when our founder, a packaging designer, got tired of six-week lead times and 10,000-unit minimums from traditional print houses. Today we run three in-house presses out of our Austin, Texas facility and ship to all 50 states.</p>
+            <p class="mt-4">We work with everyone from solo Etsy sellers to retail-shelf CPG brands — and every order gets the same attention to quality.</p>
+            <ul class="cta-benefits home-about__list">
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Free digital proof — nothing prints until you approve it</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Colour-managed from proof to final roll</li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Printed, die-cut on site and quality-checked before shipping</li>
+            </ul>
+            <a href="about.html" class="btn btn-primary mt-6">Our Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
          PRINTING SERVICES SECTION
     ========================================== -->
     <section class="section">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head center">
           <p class="eyebrow">What We Print</p>
           <h2>A Label or Sticker for Every Product.</h2>
           <p>From delicate cosmetic jars to rugged outdoor gear, choose the format built for how your product is used, shipped and shelved.</p>
@@ -220,7 +241,7 @@
           <article class="card card-hover format-card">
             <div class="card-media"><img src="../assets/images/photos/lbl-product-stickers.webp" alt="Colourful sticker sheets with markers and craft supplies" width="800" height="600" loading="lazy" decoding="async" /></div>
             <div class="card-body">
-              <h3>Product Stickers</h3>
+              <h3>Product Labels &amp; Stickers</h3>
               <p>Retail-ready stickers for packaging, promotions and product decoration at any volume.</p>
               <a href="products.html?category=product-labels" class="btn btn-ghost btn-sm">Learn More &rarr;</a>
             </div>
@@ -249,6 +270,23 @@
               <a href="products.html?category=packaging-stickers" class="btn btn-ghost btn-sm">Learn More &rarr;</a>
             </div>
           </article>
+          <!-- CONFIRM BEFORE PUBLISHING: barcode labels are not in the product catalogue; worded as an enquiry until the offer is confirmed (see documentation/customization.md). -->
+          <article class="card card-hover format-card">
+            <div class="card-media"><img src="../assets/images/photos/lbl-barcode-labels.webp" alt="Shipping carton printed with a barcode and box-size label" width="800" height="600" loading="lazy" decoding="async" /></div>
+            <div class="card-body">
+              <h3>Barcode Labels</h3>
+              <p>Need barcode or inventory labels for products, cartons or shipments? Ask a specialist to confirm availability for your order.</p>
+              <a href="contact.html" class="btn btn-ghost btn-sm">Ask About Barcode Labels &rarr;</a>
+            </div>
+          </article>
+          <article class="card card-hover format-card">
+            <div class="card-media"><img src="../assets/images/photos/lbl-clear-dropper.webp" alt="Clear glass dropper bottle, the kind of packaging transparent labels are made for" width="800" height="600" loading="lazy" decoding="async" /></div>
+            <div class="card-body">
+              <h3>Transparent Labels</h3>
+              <p>Clear film labels that give glass and clear packaging a clean no-label look.</p>
+              <a href="products.html?category=transparent-labels" class="btn btn-ghost btn-sm">Learn More &rarr;</a>
+            </div>
+          </article>
           <article class="card card-hover format-card format-card--wide">
             <div class="card-media"><img src="../assets/images/photos/lbl-diecut-sticker.webp" alt="Custom die-cut sneaker sticker finished with real laces" width="800" height="600" loading="lazy" decoding="async" /></div>
             <div class="card-body">
@@ -257,7 +295,7 @@
               <a href="products.html?category=die-cut-stickers" class="btn btn-ghost btn-sm">Learn More &rarr;</a>
             </div>
           </article>
-          <aside class="format-help" aria-label="Help choosing a format">
+          <aside class="format-help format-help--full" aria-label="Help choosing a format">
             <h3>Not sure which format fits?</h3>
             <p>Tell us how your product is used, shipped and shelved — a production specialist will recommend the stock, finish and quantity.</p>
             <a href="contact.html" class="btn btn-primary">Ask a Print Specialist</a>
@@ -277,7 +315,7 @@
             <h2>Built From the Right Stock, Every Time.</h2>
             <p>Every material is engineered for a specific job — from pantry shelves to walk-in coolers.</p>
           </div>
-          <a href="products.html" class="btn btn-dark">Compare Materials</a>
+          <a href="products.html" class="btn btn-primary">Compare Materials</a>
         </div>
 
         <div data-tabs>
@@ -352,6 +390,51 @@
     </section>
 
     <!-- ==========================================
+         PRINTING &amp; FINISHING
+    ========================================== -->
+    <section class="section" aria-labelledby="home-finish-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Printing &amp; Finishing</p>
+          <h2 id="home-finish-title">Print and Finish Options for Every Label.</h2>
+          <p>Pair our colour-managed digital printing with the finish that suits your product, shelf and budget.</p>
+        </div>
+        <!-- CONFIRM BEFORE PUBLISHING: UV coating and foil finishing are not offered anywhere else on the site; worded as enquiries until confirmed. -->
+        <div class="grid grid-3 option-grid">
+          <div class="card option-card"><div class="icon-tile"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="6" y="3" width="12" height="6" rx="1" stroke="currentColor" stroke-width="2"/><rect x="3" y="9" width="18" height="8" rx="2" stroke="currentColor" stroke-width="2"/><rect x="7" y="14" width="10" height="7" rx="1" stroke="currentColor" stroke-width="2"/></svg></div><h3>Digital Printing</h3><p>Vivid, colour-accurate CMYK printing on our in-house presses, from 50-unit test runs to full production.</p></div>
+          <div class="card option-card"><div class="icon-tile dark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2"/></svg></div><h3>Matte Finish</h3><p>A soft, non-reflective finish with zero glare — the most popular choice for skincare and boutique packaging.</p></div>
+          <div class="card option-card"><div class="icon-tile magenta"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2"/><path d="M8.5 9.5a4 4 0 013-2.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Gloss Finish</h3><p>A vibrant, reflective finish that makes colours pop under retail lighting.</p></div>
+          <div class="card option-card"><div class="icon-tile cyan"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M3 13l9 5 9-5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div><h3>Lamination</h3><p>Protective laminate layers — including waterproof and soft-touch — that guard against moisture, scuffs and handling.</p></div>
+          <div class="card option-card"><div class="icon-tile yellow"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>UV Coating</h3><p>A clear UV-cured coat for extra shine and colour protection. Ask a specialist to confirm availability for your material.</p></div>
+          <div class="card option-card"><div class="icon-tile"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M19 16v4M17 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Foil Finishing</h3><p>Metallic foil accents for logos and premium details. Ask a specialist to confirm availability for your material.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CUSTOM PRINTING
+    ========================================== -->
+    <section class="section section-alt" aria-labelledby="home-custom-title">
+      <div class="container">
+        <div class="custom-spec">
+          <div class="custom-spec__intro">
+            <p class="eyebrow">Custom Printing</p>
+            <h2 id="home-custom-title">Build Your Label, Your Way.</h2>
+            <p>Every order is configured around your product. Choose each option yourself, or let a print specialist recommend the right combination.</p>
+            <a href="custom-design.html" class="btn btn-primary btn-lg">Start a Custom Order</a>
+          </div>
+          <ol class="custom-spec__list">
+            <li><span class="custom-spec__n" aria-hidden="true">01</span><div><h3>Size</h3><p>Enter the finished width and height. Standard sizes range from 1&quot; to 12&quot;, with larger formats on request.</p></div></li>
+            <li><span class="custom-spec__n" aria-hidden="true">02</span><div><h3>Shape</h3><p>Round, square, die-cut or fully custom contours — we can trace a custom die-line for you.</p></div></li>
+            <li><span class="custom-spec__n" aria-hidden="true">03</span><div><h3>Material</h3><p>Paper, vinyl, waterproof film or transparent film, matched to how your product is used.</p></div></li>
+            <li><span class="custom-spec__n" aria-hidden="true">04</span><div><h3>Finish</h3><p>Matte, gloss or soft-touch, available on most materials.</p></div></li>
+            <li><span class="custom-spec__n" aria-hidden="true">05</span><div><h3>Quantity</h3><p>From 50-unit test runs to 100,000-unit production orders.</p></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
          WHY CHOOSE US
     ========================================== -->
     <section class="section">
@@ -390,7 +473,7 @@
             </div>
             <div class="why-item">
               <div class="icon-tile"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 7l9-4 9 4-9 4-9-4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M3 7v10l9 4 9-4V7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
-              <div><h3>Small &amp; Bulk Orders</h3><p>From 50-unit test runs to 100,000-unit production — no order is too small or large.</p></div>
+              <div><h3>Affordable Pricing at Any Volume</h3><p>From 50-unit test runs to 100,000-unit production — unit prices drop as your quantity grows.</p></div>
             </div>
             <div class="why-item">
               <div class="icon-tile dark"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
@@ -428,14 +511,55 @@
           </div>
           <div class="process-step">
             <div class="num">4</div>
-            <h3>Approve Your Proof</h3>
-            <p>We send a digital proof — nothing prints until you approve it.</p>
+            <h3>Approve Your Quote &amp; Proof</h3>
+            <p>We confirm pricing and send a digital proof — nothing prints until you approve it.</p>
           </div>
           <div class="process-step">
             <div class="num">5</div>
-            <h3>We Print &amp; Deliver</h3>
-            <p>Production starts immediately and ships straight to your door.</p>
+            <h3>Print, Check &amp; Deliver</h3>
+            <p>Printed on our in-house presses, die-cut on site, quality-checked and shipped to your door.</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         INDUSTRIES WE SERVE
+    ========================================== -->
+    <section class="section" aria-labelledby="home-industries-title">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Industries We Serve</p>
+          <h2 id="home-industries-title">Every Industry Prints Differently. We Know the Difference.</h2>
+        </div>
+        <div class="industry-tiles">
+          <figure class="industry-tile"><img src="../assets/images/photos/lbl-ind-candle.webp" alt="Hand-poured candles in glass jars ready for labelling" width="800" height="600" loading="lazy" decoding="async" /><figcaption><h3>Candle Brands</h3><p>Heat-safe paper and kraft stock that wraps cleanly around glass and tins.</p></figcaption></figure>
+          <figure class="industry-tile"><img src="../assets/images/photos/lbl-ind-cosmetics.webp" alt="White cosmetic bottles and soap ready for branded labels" width="800" height="600" loading="lazy" decoding="async" /><figcaption><h3>Cosmetic Brands</h3><p>Oil and moisture-resistant film that survives bathroom shelves and gym bags.</p></figcaption></figure>
+          <figure class="industry-tile"><img src="../assets/images/photos/lbl-ind-beverage.webp" alt="Beverage can beside a freshly poured glass" width="800" height="600" loading="lazy" decoding="async" /><figcaption><h3>Beverage Brands</h3><p>Condensation-proof waterproof labels built for coolers, fridges and ice.</p></figcaption></figure>
+          <figure class="industry-tile"><img src="../assets/images/photos/lbl-ind-ecommerce.webp" alt="Fulfilment worker packing an e-commerce order" width="800" height="600" loading="lazy" decoding="async" /><figcaption><h3>E-commerce &amp; Handmade</h3><p>Branded packaging stickers that turn every shipment into an unboxing moment.</p></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         GALLERY
+    ========================================== -->
+    <section class="section section-alt" aria-labelledby="home-gallery-title">
+      <div class="container">
+        <div class="flex-between mb-8" style="flex-wrap:wrap; gap:1rem;">
+          <div class="section-head" style="margin-bottom:0;">
+            <p class="eyebrow">Gallery</p>
+            <h2 id="home-gallery-title">Labels We've Printed for Real Products.</h2>
+          </div>
+          <a href="products.html" class="btn btn-primary">View All Products</a>
+        </div>
+        <div class="home-gallery">
+          <figure class="card card-hover gallery-tile"><div class="card-media"><img src="../assets/images/photos/lbl-hot-sauce-labels.webp" alt="Hot sauce bottles with bold printed labels on a diner counter" width="600" height="800" loading="lazy" decoding="async" /></div></figure>
+          <figure class="card card-hover gallery-tile"><div class="card-media"><img src="../assets/images/photos/lbl-sparkling-bottle.webp" alt="Sparkling wine bottle with a gold-accented front label" width="600" height="800" loading="lazy" decoding="async" /></div></figure>
+          <figure class="card card-hover gallery-tile"><div class="card-media"><img src="../assets/images/photos/lbl-candle-label.webp" alt="Cedarwood and moss candle with a printed paper label" width="600" height="800" loading="lazy" decoding="async" /></div></figure>
+          <figure class="card card-hover gallery-tile"><div class="card-media"><img src="../assets/images/photos/lbl-dropper-bottle.webp" alt="Hands holding a black dropper bottle with a minimalist label" width="600" height="800" loading="lazy" decoding="async" /></div></figure>
+          <figure class="card card-hover gallery-tile"><div class="card-media"><img src="../assets/images/photos/lbl-mini-candle-lid-label.webp" alt="Mini mason jar candle with a printed lid label" width="600" height="800" loading="lazy" decoding="async" /></div></figure>
+          <figure class="card card-hover gallery-tile"><div class="card-media"><img src="../assets/images/photos/lbl-bottle-shelf-labels.webp" alt="Shelf of wine bottles, each finished with a printed front label" width="1000" height="1250" loading="lazy" decoding="async" /></div></figure>
         </div>
       </div>
     </section>
@@ -497,6 +621,37 @@
     </section>
 
     <!-- ==========================================
+         FAQ
+    ========================================== -->
+    <section class="section section-alt" aria-labelledby="home-faq-title">
+      <div class="container svc-faq home-faq services-faq-content">
+        <div class="section-head center"><p class="eyebrow">FAQs</p><h2 id="home-faq-title">Questions Before You Order</h2><p>Straight answers on minimums, files, timing and materials.</p></div>
+        <div data-accordion-single>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false"><span>What is the minimum order?</span><span class="plus" aria-hidden="true"></span></button>
+            <div class="accordion-panel"><div class="inner">Most products start at 50 units, so you can test a design before committing to a full production run of up to 100,000 units.</div></div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false"><span>What file formats do you accept?</span><span class="plus" aria-hidden="true"></span></button>
+            <div class="accordion-panel"><div class="inner">PDF, AI, EPS and SVG are preferred for print-ready vector artwork. PNG and JPG are accepted at 300 DPI or higher.</div></div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false"><span>How long does production take?</span><span class="plus" aria-hidden="true"></span></button>
+            <div class="accordion-panel"><div class="inner">Standard production is 3–5 business days after proof approval. Rush production is available at checkout for select quantities.</div></div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false"><span>Can I get a custom die-cut shape?</span><span class="plus" aria-hidden="true"></span></button>
+            <div class="accordion-panel"><div class="inner">Yes — upload your artwork with a cut-path, or our design team can trace a custom die-line for you at no extra charge.</div></div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false"><span>Which material should I choose?</span><span class="plus" aria-hidden="true"></span></button>
+            <div class="accordion-panel"><div class="inner">Paper suits dry, indoor products; vinyl handles frequent handling; waterproof film survives fridges, ice and bathrooms; clear film gives a no-label look. Ask a specialist if you are unsure.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
          FINAL CTA
     ========================================== -->
     <section class="cta-photo" aria-labelledby="final-cta-title">
@@ -514,6 +669,75 @@
           <div class="hero-actions">
             <a href="custom-design.html" class="btn btn-primary btn-lg">Upload Your Design</a>
             <a href="contact.html" class="btn btn-white btn-lg">Request a Custom Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT US
+    ========================================== -->
+    <section class="section" id="contact-form" aria-labelledby="home-contact-title">
+      <div class="container">
+        <div class="grid grid-2 home-contact">
+          <div>
+            <p class="eyebrow">Contact Us</p>
+            <h2 id="home-contact-title">Tell Us About Your Next Print Run.</h2>
+            <p class="mt-4">Share your product, quantity and timeline — a print specialist will follow up by email within one business day.</p>
+            <ul class="footer-contact stack gap-3 mt-6 home-contact__details">
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5c0 8 7 15 15 15l3-4-6-3-2 2c-3-1-5-3-6-6l2-2-3-6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg> <a href="tel:+18005550142">+1 (800) 555-0142</a></li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="2"/></svg> <a href="mailto:hello@printoralabels.example">hello@printoralabels.example</a></li>
+              <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7-4.5-7-11a7 7 0 0114 0c0 6.5-7 11-7 11z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2"/></svg> 4820 Distribution Way, Austin, TX 78744</li>
+            </ul>
+          </div>
+          <div class="card home-contact__card">
+            <h3>Request a Quote</h3>
+            <form id="home-quote-form" novalidate data-validate class="mt-6">
+              <div class="field-row">
+                <div class="field">
+                  <label for="h-name">Name<span class="required">*</span></label>
+                  <input type="text" id="h-name" name="name" class="input" autocomplete="name" required />
+                  <span class="error-msg" data-required="Please enter your name.">Please enter your name.</span>
+                </div>
+                <div class="field">
+                  <label for="h-email">Email<span class="required">*</span></label>
+                  <input type="email" id="h-email" name="email" class="input" autocomplete="email" required />
+                  <span class="error-msg" data-required="Please enter your email address." data-invalid="Please enter a valid email address.">Please enter your email address.</span>
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="h-product">Product<span class="required">*</span></label>
+                  <select id="h-product" name="product" class="select" required>
+                    <option value="">Select a product</option>
+                    <option>Custom Label</option>
+                    <option>Product Sticker</option>
+                    <option>Die-Cut Sticker</option>
+                    <option>Packaging Label</option>
+                    <option>Roll Label</option>
+                  </select>
+                  <span class="error-msg" data-required="Please select a product.">Please select a product.</span>
+                </div>
+                <div class="field">
+                  <label for="h-quantity">Quantity<span class="required">*</span></label>
+                  <input type="number" id="h-quantity" name="quantity" class="input" min="1" required />
+                  <span class="error-msg" data-required="Please enter a quantity.">Please enter a quantity.</span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="h-message">Message</label>
+                <textarea id="h-message" name="message" class="textarea" placeholder="Tell us about your project…"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg btn-block">
+                <span class="btn-label">Request a Quote</span>
+                <span class="spinner" aria-hidden="true"></span>
+              </button>
+              <!-- TODO: Replace with actual Formspree / Netlify Forms endpoint (same as contact.html) -->
+            </form>
+            <div class="alert alert-success mt-6" data-form-success hidden>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg>
+              <div><strong>Thanks — your request is in!</strong> A print specialist will follow up by email within one business day.</div>
+            </div>
           </div>
         </div>
       </div>

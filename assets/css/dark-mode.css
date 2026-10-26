@@ -28,6 +28,11 @@
     --color-warning-bg: #332608;
     --color-error-bg: #351512;
     --color-info-bg: #0c2436;
+    /* Status text on the dark tints above (the light-theme values were 2.96–4.08:1); icon fills use the --*-strong tokens */
+    --color-success: #4cc38a;
+    --color-warning: #f0b45a;
+    --color-error: #ff8a8f;
+    --color-info: #7cc0ef;
   }
   html:not([data-theme="light"]) .badge-primary { color: #ff9a8f; }
   html:not([data-theme="light"]) .badge-cyan { background: #062733; color: #6fd9f5; }
@@ -68,6 +73,11 @@ html[data-theme="dark"] {
   --color-warning-bg: #332608;
   --color-error-bg: #351512;
   --color-info-bg: #0c2436;
+  /* Status text on the dark tints above (the light-theme values were 2.96–4.08:1); icon fills use the --*-strong tokens */
+  --color-success: #4cc38a;
+  --color-warning: #f0b45a;
+  --color-error: #ff8a8f;
+  --color-info: #7cc0ef;
 }
 html[data-theme="dark"] .badge-primary { color: #ff9a8f; }
 html[data-theme="dark"] .badge-cyan { background: #062733; color: #6fd9f5; }

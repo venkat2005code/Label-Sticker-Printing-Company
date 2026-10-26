@@ -88,11 +88,13 @@
 
     function close() {
       toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-label", "Open menu");
       nav.classList.remove("is-open");
       document.body.classList.remove("no-scroll");
     }
     function open() {
       toggle.setAttribute("aria-expanded", "true");
+      toggle.setAttribute("aria-label", "Close menu");
       nav.classList.add("is-open");
       document.body.classList.add("no-scroll");
     }
@@ -115,7 +117,20 @@
 
     nav.querySelectorAll("a[href]:not([href='#'])").forEach((a) => a.addEventListener("click", close));
     window.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") close();
+      if (toggle.getAttribute("aria-expanded") !== "true") return;
+      if (e.key === "Escape") {
+        const inside = nav.contains(document.activeElement);
+        close();
+        if (inside) toggle.focus();
+        return;
+      }
+      if (e.key !== "Tab") return;
+      // The open drawer covers the page, so Tab cycles through the header above it and the drawer only.
+      const items = [...document.querySelectorAll(".site-header a[href], .site-header button, .mobile-nav a[href], .mobile-nav button")]
+        .filter((n) => !n.disabled && n.getClientRects().length && getComputedStyle(n).visibility !== "hidden");
+      const first = items[0], last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
     });
   }
 
@@ -365,10 +380,22 @@
      ------------------------------------------------------------------ */
   const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const PHONE_RE = /^[+]?[\d\s()-]{7,}$/;
+  const DEMO_NOTE = "(Demo mode — nothing was sent.)";
+
+  // Inputs without a .field wrapper (footer newsletter, notify-me) used to pass unchecked,
+  // so an empty or malformed email still "submitted". Check them directly.
+  function validateBareField(field) {
+    const value = field.value.trim();
+    const filled = field.type === "checkbox" ? field.checked : value !== "";
+    const ok = !(field.hasAttribute("required") && !filled) && !(field.type === "email" && value !== "" && !EMAIL_RE.test(value));
+    if (ok) field.removeAttribute("aria-invalid");
+    else field.setAttribute("aria-invalid", "true");
+    return ok;
+  }
 
   function validateField(field) {
     const wrap = field.closest(".field");
-    if (!wrap) return true;
+    if (!wrap) return validateBareField(field);
     const errorEl = wrap.querySelector(".error-msg");
     let message = "";
 
@@ -420,7 +447,7 @@
       fields.forEach((field) => {
         field.addEventListener("blur", () => validateField(field));
         field.addEventListener("input", () => {
-          if (field.closest(".field")?.classList.contains("is-invalid")) validateField(field);
+          if (field.closest(".field")?.classList.contains("is-invalid") || field.getAttribute("aria-invalid") === "true") validateField(field);
         });
       });
 
@@ -432,7 +459,7 @@
         });
 
         if (!valid) {
-          const firstInvalid = form.querySelector(".field.is-invalid .input, .field.is-invalid .select, .field.is-invalid .textarea, .field.is-invalid input");
+          const firstInvalid = form.querySelector(".field.is-invalid .input, .field.is-invalid .select, .field.is-invalid .textarea, .field.is-invalid input, input[aria-invalid='true']");
           if (firstInvalid) firstInvalid.focus();
           window.showToast && window.showToast("error", "Please check the form", "Some fields need your attention.");
           return;
@@ -442,14 +469,17 @@
         if (submitBtn) submitBtn.classList.add("is-loading");
 
         // TODO: Replace with actual Formspree / Netlify Forms endpoint.
+        // Until then nothing is sent, so every success message says so — remove DEMO_NOTE once the endpoint is live.
         setTimeout(() => {
           if (submitBtn) submitBtn.classList.remove("is-loading");
           const successState = form.parentElement.querySelector("[data-form-success]");
           if (successState) {
             form.hidden = true;
             successState.hidden = false;
+            const text = successState.querySelector("div") || successState;
+            if (!text.querySelector("[data-demo-note]")) text.insertAdjacentHTML("beforeend", ' <span data-demo-note>' + DEMO_NOTE + "</span>");
           } else {
-            window.showToast && window.showToast("success", "Submitted", "We received your request and will be in touch shortly.");
+            window.showToast && window.showToast("success", "Submitted", "We received your request and will be in touch shortly. " + DEMO_NOTE);
             form.reset();
           }
         }, 900);
@@ -461,10 +491,26 @@
      Active nav-link highlighting based on current file name
      ------------------------------------------------------------------ */
   function initActiveNav() {
-    const path = window.location.pathname.split("/").pop() || "index.html";
+    const rawPath = window.location.pathname.split("/").pop();
+    const path = (rawPath && rawPath !== "") ? rawPath : "index.html";
     document.querySelectorAll(".nav-link[href]").forEach((link) => {
       const href = link.getAttribute("href").split("/").pop();
-      if (href === path) link.setAttribute("aria-current", "page");
+      if (href === path || (path === "index.html" && (href === "" || href === "index.html"))) {
+        link.setAttribute("aria-current", "page");
+        link.classList.add("is-active");
+      }
+    });
+    // Pages reached from a dropdown (Home 2, Upload Your Design, Bulk Pricing…) also highlight their parent item
+    document.querySelectorAll(".nav-dropdown a[href], .sub-links a[href]").forEach((link) => {
+      const href = link.getAttribute("href").split("/").pop();
+      if (href !== path && !(path === "index.html" && (href === "" || href === "index.html"))) return;
+      link.setAttribute("aria-current", "page");
+      link.classList.add("is-active");
+      const parent = link.closest(".nav-item") && link.closest(".nav-item").querySelector(".nav-link");
+      if (parent) {
+        parent.setAttribute("aria-current", "page");
+        parent.classList.add("is-active");
+      }
     });
   }
 
